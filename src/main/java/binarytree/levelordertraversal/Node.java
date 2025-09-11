@@ -1,6 +1,8 @@
 package binarytree.levelordertraversal;
 
+import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class Node {
@@ -30,6 +32,28 @@ class Solution {
             }
         }
     }
+
+    static List<List<Integer>> levelOrderTraversal1(Node root) {
+
+        List<List<Integer>> list = new java.util.ArrayList<>(List.of());
+        Queue<Node> q = new LinkedList<>();
+        q.add(root);
+
+        while(!q.isEmpty()) {
+            Node current = q.poll();
+            list.add(Arrays.asList(current.data));
+
+            if(current.left !=null) {
+                q.add(current.left);
+            }
+            if(current.right !=null) {
+                q.add(current.right);
+            }
+        }
+
+        return list;
+    }
+
 
 
     public static void main(String[] args) {

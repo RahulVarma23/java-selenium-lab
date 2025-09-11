@@ -11,6 +11,7 @@ public class Node {
 
 class Solution {
 
+    //total no of nodes in tree
     static int size (Node root) {
         if(root==null)
             return 0;
