@@ -15,9 +15,14 @@ public class Node {
 
 class Solution {
 
+    //we are using reverse preorder mechanism
+    //preorder -> root -> left -> right
+    //reverse preorder -> root -> right -> left
     private static void rightViewTreeUtil(Node root, List<Node> list, int level) {
         if(root==null) return;
 
+        //We only add the first node we visit at a level.
+        //Since we traverse right first, the first node we see at each level is the rightmost.
         if(level == list.size()) {
             list.add(level, root);
         }
@@ -25,7 +30,6 @@ class Solution {
         rightViewTreeUtil(root.right, list, level+1);
         rightViewTreeUtil(root.left, list, level+1);
     }
-
 
     private static void rightViewTree(Node root) {
         List<Node> list = new ArrayList<>();

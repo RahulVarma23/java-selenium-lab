@@ -2,8 +2,14 @@ package array2;
 
 public class MaxProductSubArray {
 
+    /*
+     Given an integer array nums, find the contiguous subarray with the largest product.
+     Example:
+     Input: nums = [2,3,-2,4]
+     Output: 6 (subarray [2,3])
+     */
 	public static void main(String[] args) {
-		int [] arr = {2,3,-2,4,3,1};
+		int [] arr = {2,3,-2,4};
 		
 		int maxProduct = Integer.MIN_VALUE;
 		int currentProduct = 1;

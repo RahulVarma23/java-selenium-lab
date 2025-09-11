@@ -37,10 +37,10 @@ class Solution {
             if(! map.containsKey(coln)) {
                 map.put(coln, node.data);
             }
-            if(cur.node.left !=null) {
+            if(node.left !=null) {
                 q.add(new Pair(coln-1, node.left));
             }
-            if(cur.node.right !=null) {
+            if(node.right !=null) {
                 q.add(new Pair(coln+1, node.right));
             }
         }

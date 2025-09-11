@@ -1,4 +1,4 @@
-package array1;
+package twopointers;
 
 public class ContainerWithMostWater {
 

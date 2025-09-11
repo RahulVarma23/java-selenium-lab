@@ -24,7 +24,7 @@ public class EmailValidation {
        if(email==null || email.isEmpty()) {
            return false;
        }
-       String EMAIL_REGEX  = "^[a-zA-Z0-9_+&*-]+@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
+       String EMAIL_REGEX  = "^[a-zA-Z0-9_+&*-]+@[a-zA-Z0-9.-]+\\.+[a-zA-Z]{2,7}$";
 
        Pattern pattern = Pattern.compile(EMAIL_REGEX);
        Matcher matcher = pattern.matcher(email);

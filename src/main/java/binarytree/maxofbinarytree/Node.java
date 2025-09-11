@@ -14,7 +14,10 @@ class Solution {
     static int max(Node root) {
         if(root==null) return 0;
 
-        int maxBetnLeftRight = Math.max(max(root.left), max(root.right));
+        int leftMax = max(root.left);
+        int rightMax = max(root.right);
+
+        int maxBetnLeftRight = Math.max(leftMax, rightMax);
 
         return Math.max(root.data, maxBetnLeftRight);
     }

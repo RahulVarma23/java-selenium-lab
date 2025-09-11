@@ -3,7 +3,6 @@ package string.problems;
 import java.util.HashSet;
 
 //output:tec
-
 public class DuplicateCharacters {
 
 	public static void main(String[] args) {
@@ -16,6 +15,7 @@ public class DuplicateCharacters {
 			return null;
 		}
 		char[] ch = str.toCharArray();
+
 		HashSet<Character> hs = new HashSet<>();
 		String output = "";
 		for (char c : ch) {
@@ -23,13 +23,6 @@ public class DuplicateCharacters {
 				output = c+output;
 			}
 		}
-		return output;
-	}
-	
-	private static String findDuplicate1(String str) {
-		String output="";
-		
-		
 		return output;
 	}
 }

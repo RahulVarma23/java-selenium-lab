@@ -28,11 +28,9 @@ public class KeyStroke {
                 stack.push(c);
             }
         }
-
         for(char ch : stack) {
             sb.append(ch);
         }
-
         return sb.toString();
     }
 
