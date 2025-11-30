@@ -1,4 +1,4 @@
-package BinarySearch;
+package binarysearch;
 
 import java.util.Arrays;
 
@@ -28,9 +28,9 @@ public class FirstAndLastIndex {
             } else {
                 ans = mid;
                 if (findStartIndex) {
-                    end = mid - 1;
+                    end = mid - 1;     //lowerbound
                 } else {
-                    start = mid + 1;
+                    start = mid + 1;  //upperbound
                 }
             }
         }

@@ -1,4 +1,4 @@
-package interview.problems;
+package twopointers;
 
 import java.util.Arrays;
 
@@ -9,29 +9,25 @@ public class MinimumPlatform {
 		
 		Arrays.sort(arr);
 		Arrays.sort(dep);
-		int result = 1;int platforms =1;
-		int i =1,j=0;
+		int result = 0;int platforms =0;
+
+        int i =0,j=0;// i for arrival , j for departure .
+        // we will iterate through both arrays and compare arrival and departure times
 		
-		while(i<n && j< n) {
-			
+		while(i<n) {
 			if(arr[i]<=dep[j]) {
-				platforms++;
-				i++;				
+				platforms++;    // new train arrived before previous one departs
+				i++;			// move to next arrival
 			}else if(arr[i]>dep[j]) {
-				platforms--;
+				platforms--;    // previous train departs before new one arrives
 				j++;
 			}			
-				result = Math.max(platforms, result);
+            result = Math.max(platforms, result);
 		}
-			
-		
 		return result;
-		
 	}
 
 	public static void main(String[] args) {
-		
-
 		int [] arr = {9 , 8 , 5,10,12,18};
 		
 		int [] dep = {9, 13,19, 11 ,13};

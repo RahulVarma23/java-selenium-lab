@@ -1,13 +1,9 @@
-package interview3;
+package mathandgeometry;
 
-public class ServiceNowQuestion2 {
+public class ReduceNumToOne {
 
     public static boolean checkOddEven(int num){
-        boolean flag=false;
-        if (num%2==0){
-            flag=true;
-        }
-        return flag;
+        return num % 2 == 0;
     }
 
     public static void reduceNumbertoOne(int num){

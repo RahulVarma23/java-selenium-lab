@@ -12,12 +12,12 @@ public class DailyTemperatures {
 
         for(int i=n-1;i>=0;i--) {
             while(!s.isEmpty() && temperatures[s.peek()]<= temperatures[i]) {
-                s.pop();
+                s.pop();  //if current temp is greater pop until we find greater temp
             }
             if(s.isEmpty()) {
-                ans[i]=0;
+                ans[i]=0;  //no greater temp found
             }else{
-                ans[i] = s.peek()-i;
+                ans[i] = s.peek()-i;  //index difference to next greater temp
             }
             s.push(i);
         }

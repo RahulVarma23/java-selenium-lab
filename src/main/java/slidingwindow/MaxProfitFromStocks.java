@@ -1,4 +1,4 @@
-package array2;
+package slidingwindow;
 
 public class MaxProfitFromStocks {
 	

@@ -22,10 +22,7 @@ public class CanFormPolindrome {
             if(count%2 !=0) {
                 oddCount++;
             }
-            if(oddCount>1) {
-                return false;
-            }
         }
-        return true;
+        return oddCount<=1;
     }
 }

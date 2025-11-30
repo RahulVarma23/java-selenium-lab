@@ -1,4 +1,4 @@
-package general;
+package mathandgeometry;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +7,7 @@ public class RomanToInteger {
 
     public static void main(String[] args) {
 
-        String input = "IX";
+        String input = "XLIX";
 
         Map<Character, Integer> roman  = new HashMap<>();
         roman.put('I' , 1);

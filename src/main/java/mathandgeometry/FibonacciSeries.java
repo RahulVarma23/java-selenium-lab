@@ -1,4 +1,4 @@
-package interview3;
+package mathandgeometry;
 
 public class FibonacciSeries {
 

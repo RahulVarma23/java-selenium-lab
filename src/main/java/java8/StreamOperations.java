@@ -11,7 +11,8 @@ public class StreamOperations {
 	public static void main(String[] args) {
 		Integer [] arr = {10,15,8,49,25,98,32,15,8};
 		List<Integer> myList = Arrays.asList(arr);
-		
+
+
 		
 		//find out all the even numbers exist in the list 
 		myList.stream().filter(n->n%2==0).forEach(System.out::println);

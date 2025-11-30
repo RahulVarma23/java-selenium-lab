@@ -22,13 +22,11 @@ public class MinimumSwaps {
 		Arrays.sort(a);
 		
 		HashMap<Integer,Integer> map = new HashMap<>();
-		
 		for(int i =0;i<a.length;i++) {
 			map.put(a[i], i);
 		}
 		
 		int count =0;
-		
 		for(int i=0;i<a.length;i++) {
 			while(map.get(arr[i])!=i){
 				count++;

@@ -1,4 +1,4 @@
-package array1;
+package mathandgeometry;
 
 import java.util.Arrays;
 

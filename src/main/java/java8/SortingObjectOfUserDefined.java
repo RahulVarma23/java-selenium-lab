@@ -2,6 +2,7 @@ package java8;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class SortingObjectOfUserDefined {
@@ -39,7 +40,7 @@ public class SortingObjectOfUserDefined {
 //				.sorted((I1, I2) -> I1.getFirstName().compareTo(I2.getFirstName())).forEach(System.out::println);
 
 		
-		list.sort((d1, d2) -> d1.lastName.compareTo(d2.lastName));
+		list.sort(Comparator.comparing(d -> d.lastName));
 		System.out.println(list);
 
 		System.out.println("==============================");

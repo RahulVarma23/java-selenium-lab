@@ -18,7 +18,11 @@ public class SortMapDemo {
 		
 		List<Entry<Integer, String>> entries = new ArrayList<>(map.entrySet());
 		Collections.sort(entries,(o1,o2)-> o1.getKey()-o2.getKey());
-		
+
+        entries.sort((a,b)-> b.getValue().compareTo(a.getValue()));
+        System.out.println(entries);
+
+
 //		for(Entry<Integer, String> entry : entries) {
 //			System.out.println(entry.getKey()+"->"+entry.getValue());
 //		}

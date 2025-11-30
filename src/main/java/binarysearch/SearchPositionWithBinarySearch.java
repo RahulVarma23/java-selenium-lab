@@ -1,4 +1,4 @@
-package BinarySearch;
+package binarysearch;
 
 public class SearchPositionWithBinarySearch {
 	
@@ -20,7 +20,7 @@ public class SearchPositionWithBinarySearch {
 			}else
 				end = mid-1;
 		}
-			return res;	
+        return res;
 	}
 	
 	static int searchLastPosition(int [] input , int target) {

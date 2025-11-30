@@ -1,4 +1,4 @@
-package general;
+package mathandgeometry;
 
 public class SelfDividingNumber {
 

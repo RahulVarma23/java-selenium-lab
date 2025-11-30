@@ -1,4 +1,4 @@
-package latest;
+package mathandgeometry;
 
 public class SecondLowest {
 
