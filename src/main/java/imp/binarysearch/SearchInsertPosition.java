@@ -17,7 +17,7 @@ public class SearchInsertPosition {
             //If mid element is greater than or equal to target,
             //it could be the correct insert position (or we can find a smaller one to the left)
             if(arr[mid]>=target) {
-                ans = mid;  // Update possible insert position
+                ans = mid;      // Update possible insert position
                 high = mid-1;  // Move left to find smaller valid position
             }else {
                 low = mid+1;

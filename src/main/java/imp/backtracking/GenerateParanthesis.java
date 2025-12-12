@@ -1,4 +1,4 @@
-package imp.stack;
+package imp.backtracking;
 
 import java.util.ArrayList;
 import java.util.List;

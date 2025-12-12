@@ -2,6 +2,7 @@ package imp.binarysearch;
 
 public class SearchInRotatedSortedArray2 {
 
+    //rotated sorted array(not necessarily with distinct values)
     private static boolean search(int[] nums, int target) {
         int n = nums.length;
         int low = 0;

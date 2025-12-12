@@ -2,6 +2,8 @@ package imp.binarysearch;
 
 public class SearchInRotatedSortedArray1 {
 
+    //rotated sorted array.no duplicates
+
     private static int search(int[] nums, int target) {
         int n = nums.length;
         int low = 0;
